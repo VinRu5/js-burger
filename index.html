@@ -12,70 +12,111 @@
 </head>
 <body>
     <div class="container-view">
-        <header class="container">
-            <div class="row">
-                <h1 class="col-8">Create your Burger</h1>
-                <div class="burger-img col-4">
-                    <img src="./img/burger-top.png" alt="burger">
+
+        <!-- header e titolo dell'app -->
+        <header>
+            <div class="container container-width">
+                <div class="row">
+                    <h1 class="col-8">Create your Burger</h1>
+                    <div class="burger-img col-4">
+                        <img src="./img/burger-top.png" alt="burger">
+                    </div>
                 </div>
             </div>
         </header>
 
-        <main class="container">
-            <div>
-                <h2>Name Your Burger</h2>
-                <h3>Ingredients</h3>
+        <!-- contenuto principale -->
+        <main class="container container-width">
+            <div class="title row">
+                <h2 class="col-12">Name Your Burger</h2>
+                <h3 class="col-12">Ingredients</h3>
             </div>
-            <form class="row">
-                <div class="col-6">
-                    <label for="cheese">Cheese</label>
+
+            <!-- scelta ingredienti -->
+            <form class="ingredients row">
+                <div class="food-item col-6">
+                    <label for="cheese">
+                        <img src="./img/cheese.svg" alt="cheese">
+                        Cheese
+                    </label>
                     <input type="checkbox" name="cheese" id="cheese" class="add-food" value="4">
                     <label for="cheese">add</label>
                 </div>
                 
-                <div class="col-6">
-                    <label for="tomato">Tomato</label>
+                <div class="food-item col-6">
+                    <label for="tomato">
+                        <img src="./img/tomato.svg" alt="tomato">
+                        Tomato
+                    </label>
                     <input type="checkbox" name="tomato" id="tomato" class="add-food" value="5">
                     <label for="tomato">add</label>
                 </div>
 
-                <div class="col-6">
-                    <label for="egg">Egg</label>
-                    <input type="checkbox" name="cheese" id="egg" class="add-food" value="5">
+                <div class="food-item col-6">
+                    <label for="egg">
+                        <img src="./img/fried-egg.svg" alt="eggs">
+                        Egg
+                    </label>
+                    <input type="checkbox" name="egg" id="egg" class="add-food" value="5">
                     <label for="egg">add</label>
                 </div>
         
-                <div class="col-6">
-                    <label for="lettuce">Lettuce</label>
+                <div class="food-item col-6">
+                    <label for="lettuce">
+                        <img src="./img/lettuce.svg" alt="lettuce">
+                        Lettuce
+                    </label>
                     <input type="checkbox" name="lettuce" id="lettuce" class="add-food" value="4">
                     <label for="lettuce">add</label>
                 </div>
 
-                <div class="col-6">
-                    <label for="mustard">Mustard</label>
+                <div class="food-item col-6">
+                    <label for="mustard">
+                        <img src="./img/mustard.svg" alt="mustard">
+                        Mustard
+                    </label>
                     <input type="checkbox" name="cheese" id="mustard" class="add-food" value="3">
                     <label for="mustard">add</label>
                 </div>
         
-                <div class="col-6">
-                    <label for="ketchup">Ketchup</label>
+                <div class="food-item col-6">
+                    <label for="ketchup">
+                        <img src="./img/ketchup.svg" alt="ketchup">
+                        Ketchup
+                    </label>
                     <input type="checkbox" name="ketchup" id="ketchup" class="add-food" value="3">
                     <label for="ketchup">add</label>
                 </div>
         
-                <div class="col-12">
-                    <label for="saled">Discount Coupon</label>
-                    <input type="text" class="add-sale" id="saled" placeholder="Inserisci Codice Sconto">
+                <!-- codice sconto -->
+                <div class="text-saled col-12">
+                    <div class="row">
+                        <label for="saled" class="col">Discount Coupon</label>
+                        <input type="text" class="add-sale col-9" id="saled" placeholder="Inserisci Codice Sconto">
+                    </div>
                 </div>
             </form>
-            <div>
+
+            <!-- button di calcolo -->
+            <div class="text-center">
                 <button class="button-total btn btn-warning">calculate</button>
             </div>
         
-            <div class="total">50</div>
-    
+            
         </main>
-
+        
+        <!-- parte finale e risultato -->
+        <footer>
+            <div class="container container-width">
+                <div class="row">
+                    <div class="col">Your Price</div>
+                    <div class="col text-end">
+                        <span>$</span>
+                        <span class="total">50</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     
 
     <script type="text/javascript" src="./js/script.js"></script>

@@ -2,14 +2,19 @@
 body {
     background-color: #FEF5E4;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 .container-view {
     width: 50%;
-    height: 100vh;
     background-color: #fff;
 }
 
+.container-width {
+    width: 90%;
+}
+
+/* header */
 header {
     background-color: #F4BC59;
     position: relative;
@@ -17,7 +22,6 @@ header {
 
 header h1 {
     padding-top: 48px;
-    margin-left: 48px;
     padding-bottom: 24px;
     font-size: 32px;
     font-weight: 700;
@@ -31,4 +35,68 @@ header h1 {
 
 .burger-img img {
     width: 100%;
+}
+
+
+/* main */
+main {
+    padding-bottom: 100px;
+}
+
+.title h2 {
+    color: #777;
+    font-size: 26px;
+    padding-top: 36px;
+}
+
+.title h3 {
+    font-size: 22px;
+    padding-top: 36px;
+}
+
+/* scelta ingredienti */
+form.ingredients {
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+form.ingredients img {
+    width: 40px;
+}
+
+.food-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.food-item label:last-child {
+    color: #C3425B;
+}
+
+/* codice sconto */
+.text-saled {
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
+
+.text-saled input {
+    background-color: #FEF5E4;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px; 
+}
+
+/* button */
+.button-total {
+    font-weight: 700;
+}
+
+/* parte finale e risultato */
+footer {
+    background-color: #C3425B;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
