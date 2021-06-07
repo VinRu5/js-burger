@@ -17,7 +17,7 @@ header {
 
 header h1 {
     padding-top: 48px;
-    padding-left: 48px;
+    margin-left: 48px;
     padding-bottom: 24px;
     font-size: 32px;
     font-weight: 700;
@@ -27,4 +27,8 @@ header h1 {
     position: absolute;
     top: -30px;
     left: 75%;
+}
+
+.burger-img img {
+    width: 100%;
 }

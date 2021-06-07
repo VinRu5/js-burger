@@ -12,10 +12,12 @@
 </head>
 <body>
     <div class="container-view">
-        <header>
-            <h1>Create your Burger</h1>
-            <div class="burger-img">
-                <img src="./img/burger-top.png" alt="burger">
+        <header class="container">
+            <div class="row">
+                <h1 class="col-8">Create your Burger</h1>
+                <div class="burger-img col-4">
+                    <img src="./img/burger-top.png" alt="burger">
+                </div>
             </div>
         </header>
 
@@ -61,18 +63,17 @@
                     <label for="ketchup">add</label>
                 </div>
         
-                <div class="col-6">
+                <div class="col-12">
                     <label for="saled">Discount Coupon</label>
                     <input type="text" class="add-sale" id="saled" placeholder="Inserisci Codice Sconto">
                 </div>
             </form>
-            <div class="row">
-            
+            <div>
                 <button class="button-total btn btn-warning">calculate</button>
-            
-                <div class="total">50</div>
-            
             </div>
+        
+            <div class="total">50</div>
+    
         </main>
 
     
