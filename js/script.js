@@ -20,8 +20,10 @@ buttonTotal.addEventListener('click', function(){
     var sale20 = burgerPrice * 20 / 100;
 
     if (textSales.value === 'SALE20') {
-        burgerPrice = burgerPrice - sale20;
+        burgerPrice -= sale20;
     }
+
+    burgerPrice = burgerPrice.toFixed(2);
 
     totalOutput.innerHTML = burgerPrice;
 });
