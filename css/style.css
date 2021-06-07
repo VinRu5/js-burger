@@ -1,0 +1,30 @@
+
+body {
+    background-color: #FEF5E4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-view {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+header {
+    background-color: #F4BC59;
+    position: relative;
+}
+
+header h1 {
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.burger-img {
+    position: absolute;
+    top: -30px;
+    left: 75%;
+}

@@ -4,42 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreateYourBurger</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <title>CreateYourBurger</title>
 </head>
 <body>
+    <div class="container-view">
+        <header>
+            <h1>Create your Burger</h1>
+            <div class="burger-img">
+                <img src="./img/burger-top.png" alt="burger">
+            </div>
+        </header>
+
+        <main class="container">
+            <div>
+                <h2>Name Your Burger</h2>
+                <h3>Ingredients</h3>
+            </div>
+            <form class="row">
+                <div class="col-6">
+                    <label for="cheese">Cheese</label>
+                    <input type="checkbox" name="cheese" id="cheese" class="add-food" value="4">
+                    <label for="cheese">add</label>
+                </div>
+                
+                <div class="col-6">
+                    <label for="tomato">Tomato</label>
+                    <input type="checkbox" name="tomato" id="tomato" class="add-food" value="5">
+                    <label for="tomato">add</label>
+                </div>
+
+                <div class="col-6">
+                    <label for="egg">Egg</label>
+                    <input type="checkbox" name="cheese" id="egg" class="add-food" value="5">
+                    <label for="egg">add</label>
+                </div>
+        
+                <div class="col-6">
+                    <label for="lettuce">Lettuce</label>
+                    <input type="checkbox" name="lettuce" id="lettuce" class="add-food" value="4">
+                    <label for="lettuce">add</label>
+                </div>
+
+                <div class="col-6">
+                    <label for="mustard">Mustard</label>
+                    <input type="checkbox" name="cheese" id="mustard" class="add-food" value="3">
+                    <label for="mustard">add</label>
+                </div>
+        
+                <div class="col-6">
+                    <label for="ketchup">Ketchup</label>
+                    <input type="checkbox" name="ketchup" id="ketchup" class="add-food" value="3">
+                    <label for="ketchup">add</label>
+                </div>
+        
+                <div class="col-6">
+                    <label for="saled">Discount Coupon</label>
+                    <input type="text" class="add-sale" id="saled" placeholder="Inserisci Codice Sconto">
+                </div>
+            </form>
+            <div class="row">
+            
+                <button class="button-total btn btn-warning">calculate</button>
+            
+                <div class="total">50</div>
+            
+            </div>
+        </main>
+
     
-    <form>
-        <label for="cheese">Cheese</label>
-        <input type="checkbox" name="cheese" id="cheese" class="add-food" value="4">
-        <label for="cheese">add</label>
-
-        <label for="egg">Egg</label>
-        <input type="checkbox" name="cheese" id="egg" class="add-food" value="5">
-        <label for="egg">add</label>
-
-        <label for="mustard">Mustard</label>
-        <input type="checkbox" name="cheese" id="mustard" class="add-food" value="3">
-        <label for="mustard">add</label>
-
-        <label for="tomato">Tomato</label>
-        <input type="checkbox" name="tomato" id="tomato" class="add-food" value="5">
-        <label for="tomato">add</label>
-
-        <label for="lettuce">Lettuce</label>
-        <input type="checkbox" name="lettuce" id="lettuce" class="add-food" value="4">
-        <label for="lettuce">add</label>
-
-        <label for="ketchup">Ketchup</label>
-        <input type="checkbox" name="ketchup" id="ketchup" class="add-food" value="3">
-        <label for="ketchup">add</label>
-
-        <input type="text" class="add-sale">
-    </form>
-
-    <button class="button-total">calculate</button>
-
-    <div class="total">50</div>
 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
