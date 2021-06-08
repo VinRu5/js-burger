@@ -6,7 +6,7 @@ body {
 }
 
 .container-view {
-    width: 50%;
+    width: 60%;
     background-color: #fff;
 }
 
@@ -16,7 +16,7 @@ body {
 
 /* header */
 header {
-    background-color: #F4BC59;
+    background-color: #fdbb40;
     position: relative;
 }
 
@@ -29,8 +29,9 @@ header h1 {
 
 .burger-img {
     position: absolute;
-    top: -30px;
-    left: 75%;
+    transform: translate(20%, -15%);
+    top: 0;
+    right: 0;
 }
 
 .burger-img img {
@@ -70,7 +71,7 @@ form.ingredients img {
 }
 
 .food-item label:last-child {
-    color: #C3425B;
+    color: #d33359;
 }
 
 /* codice sconto */
@@ -93,7 +94,7 @@ form.ingredients img {
 
 /* parte finale e risultato */
 footer {
-    background-color: #C3425B;
+    background-color: #d33359;
     color: #fff;
     font-size: 26px;
     font-weight: 700;
