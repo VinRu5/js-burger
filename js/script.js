@@ -1,18 +1,23 @@
 var buttonTotal = document.getElementsByClassName('button-total')[0];
 var totalOutput = document.getElementsByClassName('total')[0];
 var textSales = document.getElementsByClassName('add-sale')[0];
-var burgerOutput = document.getElementById('burger-name');
 var discount = 20;
 
-var burgerName = prompt('Inserisci il nome del tuo Burger!');
-burgerOutput.innerHTML = burgerName;
-
-
-
 buttonTotal.addEventListener('click', function(){
+    var chooseBurger = document.getElementById('choose-burger');
     var checkboxes = document.getElementsByClassName('add-food');
     
-    var burgerPrice = 50;
+    for (x = 0; x < chooseBurger.length; x++) {
+        if (chooseBurger.value === 'cheese') {
+            var burgerPrice = 45;
+        } else if (chooseBurger.value === 'home') {
+            var burgerPrice = 50;
+        } else if (chooseBurger.value === 'double') {
+            var burgerPrice = 60;
+        } else if (chooseBurger.value === 'chicken') {
+            var burgerPrice = 48;
+        }
+    }
 
     for (var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
@@ -24,6 +29,8 @@ buttonTotal.addEventListener('click', function(){
 
     if (textSales.value === 'SALE20') {
         burgerPrice -= sale;
+    } else if (textSales.value.length > 0) {
+        alert('Codice sconto errato!');
     }
 
     burgerPrice = burgerPrice.toFixed(2);

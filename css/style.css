@@ -44,10 +44,19 @@ main {
     padding-bottom: 100px;
 }
 
-.title h2 {
+.title select {
+    margin-top: 36px;
+    border: none;
     color: #777;
     font-size: 26px;
-    padding-top: 36px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.title select option {
+    font-size: 14px;
+    background-color: #fdbb40;
+    color: #000;
 }
 
 .title h3 {
@@ -90,6 +99,13 @@ form.ingredients img {
 /* button */
 .button-total {
     font-weight: 700;
+    background-color: #fdbb40;
+    border: 3px solid #fdbb40;
+}
+
+.button-total:hover {
+    border: 3px solid #f0cc8b;
+    color: #333;
 }
 
 /* parte finale e risultato */

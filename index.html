@@ -28,7 +28,14 @@
         <!-- contenuto principale -->
         <main class="container container-width">
             <div class="title row">
-                <h2 id="burger-name" class="col-12">Name Your Burger</h2>
+                <form>
+                    <select name="choose-burger" id="choose-burger">
+                        <option value="cheese">Cheese Burger</option>
+                        <option value="home">Home Burger</option>
+                        <option value="double">Double Burger</option>
+                        <option value="chicken">Chicken Burger</option>
+                    </select>
+                </form>
                 <h3 class="col-12">Ingredients</h3>
             </div>
 
@@ -99,7 +106,7 @@
 
             <!-- button di calcolo -->
             <div class="text-center">
-                <button class="button-total btn btn-warning">calculate</button>
+                <button class="button-total btn">calculate</button>
             </div>
         
             
@@ -112,7 +119,7 @@
                     <div class="col">Your Price</div>
                     <div class="col text-end">
                         <span>$</span>
-                        <span class="total">50.00</span>
+                        <span class="total">00.00</span>
                     </div>
                 </div>
             </div>
